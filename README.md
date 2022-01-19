@@ -4,6 +4,8 @@
 
 This is a repo of Ansible roles and playbooks to deploy an Ubuntu VM or machine to spend time entirely on the CLI. Apps to try and live in the terminal. Just to make life difficult for myself. 
 
+If you want to run your machine as a home laptop or desktop entirely in the terminal - not a GUI in site - you can start with this.
+
 People have done it and written articles before – the original article I read was by [Bryan Lunduke](https://www.networkworld.com/article/3085139/30-days-in-a-terminal-day-1-the-essentials.html) who set himself the challenge of running his life through the terminal for 30 days in 2016. He lasted 10 apparently. I don’t recommend doing this without another machine with the GUI to help you along! So, yeah, plenty of people more knowledgeable than me online, but my aim is to provide easy to follow instructions for someone who, like me, is getting to grips with Infra as Code whilst being geeky. Some of this will be basic, but I have found sometimes in my training, basic guides have helped me.
 
 This repo will allow you to automate installation of all the cool tools to use the terminal for your day. My aim is to keep is updated with new apps and to streamline, eventually add automation of building the machine too, etc. 
