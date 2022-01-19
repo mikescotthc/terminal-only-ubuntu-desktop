@@ -51,6 +51,8 @@ $ sudo ansible-playbook playbook.yml -k –u [remoteusername] --check
 
 Currently this will install the following:
 
+**NEOFETCH** - Visual aid to provide system and machine info
+
 **W3M** – Great text-based internet browser
 
 **W3M-IMG** – Images extension for W3M – means you’ll see those jpgs!
