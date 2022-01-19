@@ -45,11 +45,50 @@
     name: neofetch
     state: latest
 
-- name: Install sup
-# sup text based email app
+- name: Install alpine
+# alpine - text based email app - easiest one to set up i've used
   become: true
   apt:
-    name: sup
+    name: alpine
     state: latest
+
+- name: Install wordgrinder
+# the only 'proper' not text editor word processor i've found - nano still better
+  become: true
+  apt:
+    name: wordgrinder
+    state: latest
+
+- name: Install pandoc
+# if you use wordgrinder, you'll need pandoc to convert to doc, docx etc
+  become: true
+  apt:
+    name: pandoc
+    state: latest
+
+- name: Install visidata
+# a fairly cool spreedsheet terminal app - don't need one, but fun to look at
+# just run 'vd [name].csv' and there you go
+# i mean - don't NEED any of this, but that's not the point, right?
+  become: true
+  apt:
+    name: visidata
+    state: latest
+
+- name: Install mdp
+# text based presentation - create an .md file in nano and use markup language then run 
+# 'mdp [file].md' and it'll present it all nice. 
+  become: true
+  apt:
+    name: mdp
+    state: latest
+
+- name: Install newsboat
+# RSS feeds in the terminal really are very cool 
+  become: true
+  apt:
+    name: newsboat
+    state: latest
+
 
 
