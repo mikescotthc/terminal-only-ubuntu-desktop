@@ -43,11 +43,11 @@ If you want to use the roles and playbooks as they are, ensure you define the ho
 
 Place the playbooks and roles folders inside your /etc/ansible folder, then simply run:
 
-$ sudo ansible-playbook playbook.yml -k –u [remoteusername] 
+$ sudo ansible-playbook playbook.yml -kK –u [remoteusername] 
 
 Or to merely do this as a dry run first:
 
-$ sudo ansible-playbook playbook.yml -k –u [remoteusername] --check
+$ sudo ansible-playbook playbook.yml -kK –u [remoteusername] --check
 
 Currently this will install the following:
 
