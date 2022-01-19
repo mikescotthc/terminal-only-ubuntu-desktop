@@ -1,0 +1,44 @@
+---
+- name: Install w3m
+# text based browser
+  become: true
+  apt:
+    name: w3m
+    state: latest
+
+- name: Install w3m-img
+# image extension for w3m
+  become: true
+  apt:
+    name: w3m-img
+    state: latest
+
+- name: Install elinks
+# another browser - my experience easier mouse use
+  become: true
+  apt:
+    name: elinks
+    state: latest
+
+- name: Install lynx
+# old school browser for purists
+  become: true
+  apt:
+    name: lynx
+    state: latest
+
+- name: Install neofetch
+# cool app to show machine and OS info
+  become: true
+  apt:
+    name: neofetch
+    state: latest
+
+- name: Install sup
+# sup text based email app
+  become: true
+  apt:
+    name: sup
+    state: latest
+
+
