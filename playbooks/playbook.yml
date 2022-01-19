@@ -1,0 +1,8 @@
+---
+- name: Full install
+  hosts: server01
+  roles:
+    - docker
+    - mike-tools
+    - tools
+    
