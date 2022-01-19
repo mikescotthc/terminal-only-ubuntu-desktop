@@ -1,4 +1,15 @@
 ---
+- name: Remove apt lock file
+  file:
+    state: absent
+    path: "/var/lib/dpkg/lock-frontend"
+  become: true
+
+- name: Update all
+  apt:
+    upgrade: full
+  become: true
+  
 - name: Install w3m
 # text based browser
   become: true
