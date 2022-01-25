@@ -89,6 +89,13 @@
   apt:
     name: newsboat
     state: latest
+    
+- name: Install ncspot
+# Text based Spotify app written in Rust 
+  become: true
+  snap:
+    name: ncspot
+    state: latest
 
 
 
