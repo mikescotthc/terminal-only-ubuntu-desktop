@@ -92,10 +92,9 @@
     
 - name: Install ncspot
 # Text based Spotify app written in Rust 
-  become: true
   snap:
     name: ncspot
-    state: latest
+    channel: latest/edge
 
 
 
