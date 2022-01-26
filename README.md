@@ -79,7 +79,8 @@ Currently this will install the following:
 
 [**NCSPOT**](https://snapcraft.io/ncspot) - Text based Spotify written in Rust? Yes.
 
-Other useful stuff:
+
+**Other useful stuff:**
 Network-Manager - allows for easy WiFi info updates (execute nmtui)
 
 
