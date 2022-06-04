@@ -16,7 +16,7 @@ After running the playbook, you’ll be able to do text-based web browsing (whic
 
 **Prerequisites:**
 
-This is currently tested and run using Ubuntu Server 20.04 (the current LTS edition). Get a copy of the ISO from <https://ubuntu.com/download/server> - this is fine for bare metal and on a VM using VirtualBox or [Gnome Boxes](https://help.gnome.org/users/gnome-boxes/stable/)
+This is currently tested and run using Ubuntu Server 20.04. Get a copy of the ISO from <https://ubuntu.com/download/server> - this is fine for bare metal and on a VM using VirtualBox or [Gnome Boxes](https://help.gnome.org/users/gnome-boxes/stable/)
 
 Download the ISO and either install on your VM or direct onto your hardware (I use [BalenaEtcher](https://www.balena.io/etcher/) for bootable ISOs). 
 
