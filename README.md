@@ -44,6 +44,8 @@ If not and you’re running the host as a VM, it’s likely it’s just settings
 **Usage**
 
 If you want to use the roles and playbooks as they are, ensure you define the host as ‘server01’ in your hosts file. (Default path is usually /etc/ansible/hosts). Change as you need.
+Note that you may need to run the following to re-create the role correctly:
+$ ansible-galaxy init terminal-apps --force
 
 Place the playbooks and roles folders inside your /etc/ansible folder, then simply run:
 
