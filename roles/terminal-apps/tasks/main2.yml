@@ -1,0 +1,212 @@
+---
+# HOME DAILY DRIVER DEPLOY
+- name: Remove apt lock file
+  file:
+    state: absent
+    path: "/var/lib/dpkg/lock-frontend"
+  become: true
+
+- name: Update all
+  apt:
+    upgrade: full
+  become: true
+
+- name: Install network-manager
+# Allows for, among other things, nmtui, which is an easy way to swap WiFi connections without editing netapply files manually 
+  become: true
+  apt:
+    name: network-manager
+    state: latest
+
+- name: Install Snap
+# In case snapd isn't installed
+  become: true
+  apt:
+    name: snapd
+    state: latest
+
+- name: Install w3m
+# text based browser
+  become: true
+  apt:
+    name: w3m
+    state: latest
+
+- name: Install calc
+# cli based calcuator
+  become: true
+  apt:
+    name: calc
+    state: latest
+
+- name: Install w3m-img
+# image extension for w3m
+  become: true
+  apt:
+    name: w3m-img
+    state: latest
+
+- name: Install elinks
+# another browser - my experience easier mouse use
+  become: true
+  apt:
+    name: elinks
+    state: latest
+
+- name: Install lynx
+# old school browser for purists
+  become: true
+  apt:
+    name: lynx
+    state: latest
+
+- name: Install neofetch
+# cool app to show machine and OS info
+  become: true
+  apt:
+    name: neofetch
+    state: latest
+
+- name: Install alpine
+# alpine - text based email app - easiest one to set up i've used
+  become: true
+  apt:
+    name: alpine
+    state: latest
+
+- name: Install wordgrinder
+# the only 'proper' not text editor word processor i've found - nano still better
+  become: true
+  apt:
+    name: wordgrinder
+    state: latest
+
+- name: Install pandoc
+# if you use wordgrinder, you'll need pandoc to convert to doc, docx etc
+  become: true
+  apt:
+    name: pandoc
+    state: latest
+
+- name: Install visidata
+# a fairly cool spreedsheet terminal app - don't need one, but fun to look at
+# just run 'vd [name].csv' and there you go
+# i mean - don't NEED any of this, but that's not the point, right?
+  become: true
+  apt:
+    name: visidata
+    state: latest
+
+- name: Install mdp
+# text based presentation - create an .md file in nano and use markup language then run 
+# 'mdp [file].md' and it'll present it all nice. 
+  become: true
+  apt:
+    name: mdp
+    state: latest
+
+- name: Install newsboat
+# RSS feeds in the terminal really are very cool 
+  become: true
+  apt:
+    name: newsboat
+    state: latest
+
+- name: Install Firefox
+  become: true
+  apt:
+    name: firefox
+
+- name: Install ScreenGrab
+# Screenshots
+  become: true
+  apt:
+    name: screengrab
+
+- name: Install DosBox
+# Relive the DOS days
+  become: true
+  apt:
+    name: dosbox
+
+#- name: Install Spotify
+# Tunes innit
+#  become: true
+#  apt:
+#    name: spotify
+
+#- name: Install Powershell
+# The only coding I can do 
+#  become: true
+#  apt:
+#    name: powershell
+
+- name: Install LibreOffice
+# Open soruce office
+  become: true
+  apt:
+    name: libreoffice
+
+- name: Install GNOME System Monitor
+# Info on system usage
+  become: true
+  apt:
+    name: gnome-system-monitor
+
+#- name: Install Snap Store
+# In case
+#  become: true
+#  apt:
+#    name: snap-store
+
+- name: Install Docker
+# Info on system usage
+  become: true
+  apt:
+    name: docker
+
+- name: Install AWS-CLI
+# Work innit
+  become: true
+  apt:
+    name: awscli
+
+- name: VS Code
+  become: true
+  snap:
+    name: code
+
+- name: Install Text Editor
+# Text edits
+  become: true
+  apt:
+    name: gedit
+
+- name: Install Retro Terminal
+# Retro
+  become: true
+  apt:
+    name: cool-retro-term
+
+
+- name: Install VirtualBox
+# VMs
+  become: true
+  apt:
+    name: virtualbox
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+
+    Terms
+    Privacy
+    Security
+    Status
+    Docs
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
