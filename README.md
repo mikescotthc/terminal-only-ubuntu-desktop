@@ -12,11 +12,15 @@ Recommended first time use for people new(ish) to Ansible would be clone this an
 
 Open Terminal and update the system
 
-sudo apt update
-sudo apt upgrade
-sudo apt install software-properties-common
-sudo apt-add-repository --yes --update ppa:ansible/ansible
-sudo apt install ansible
+$ sudo apt update
+
+$ sudo apt upgrade
+
+$ sudo apt install software-properties-common
+
+$ sudo apt-add-repository --yes --update ppa:ansible/ansible
+
+$ sudo apt install ansible
 
 At this point, Ansible should be installed on your system, and the /etc/ansible/ directory should be created, which will contain the Ansible configuration file ansible.cfg and a hosts file for specifying the machines in your infrastructure.
 
