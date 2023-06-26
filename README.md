@@ -65,7 +65,7 @@ $ ansible-galaxy init terminal-apps --force
 
 Place the playbooks and roles folders inside your /etc/ansible folder, then simply run:
 
-$ sudo ansible-playbook playbook.yml -kK –u [remoteusername] 
+$ sudo ansible-playbook playbook.yml -kK –u [remoteusername] --ask-pass
 
 Or to merely do this as a dry run first:
 
