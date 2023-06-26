@@ -8,7 +8,19 @@ If you want to run your machine as a home laptop or desktop entirely in the term
 
 People have done it and written articles before – the original article I read was by [Bryan Lunduke](https://www.networkworld.com/article/3085139/30-days-in-a-terminal-day-1-the-essentials.html) who set himself the challenge of running his life through the terminal for 30 days in 2016. He lasted 10 apparently. I don’t recommend doing this without another machine with the GUI to help you along! So, yeah, plenty of people more knowledgeable than me online, but my aim is to provide easy to follow instructions for someone who, like me, is getting to grips with Infra as Code whilst being geeky. Some of this will be basic, but I have found sometimes in my training, basic guides have helped me.
 
-Recommended first time use for people new(ish) to Ansible would be clone this and sit it in a sub-folder of your Ansible folder (eg. /etc/ansible and so /etc/ansible/terminalonlyubuntu).
+Recommended first time use for people new(ish) to Ansible would be clone this and sit it in a sub-folder of your Ansible folder (eg. /etc/ansible and so /etc/ansible/terminalonlyubuntu). To install Ansible in /etc/ansible, do the following:
+
+Open Terminal and update the system
+
+sudo apt update
+sudo apt upgrade
+sudo apt install software-properties-common
+sudo apt-add-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible
+
+At this point, Ansible should be installed on your system, and the /etc/ansible/ directory should be created, which will contain the Ansible configuration file ansible.cfg and a hosts file for specifying the machines in your infrastructure.
+
+Note: You might need to adjust Ansible settings according to your needs, such as inventory file location, remote user, privilege escalation method, etc. All of these are specified in the Ansible configuration file located at /etc/ansible/ansible.cfg.
 
 This repo will allow you to automate installation of all the cool tools to use the terminal for your day. My aim is to keep is updated with new apps and to streamline, eventually add automation of building the machine too, etc. 
 
